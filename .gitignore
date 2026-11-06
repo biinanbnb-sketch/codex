@@ -1,0 +1,12 @@
+.DS_Store
+.build/
+dist/
+node_modules/
+config/*.local.json
+*.log
+*.app/
+*.zip
+*.dmg
+.env
+.env.*
+!.env.example

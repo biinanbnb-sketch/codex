@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>codex · 动画预览</title>
+<style>
+html,body{margin:0;width:100%;height:100%;background:#04070b;color:#e6f8ff;font:16px/1.8 -apple-system,"PingFang SC",sans-serif;display:grid;place-items:center}
+main{text-align:center;padding:24px}button{font:inherit;padding:8px 22px;background:#12232d;border:1px solid #3fd8ff;color:#e6f8ff;cursor:pointer}p{color:#93afbf}
+</style>
+<body>
+<main><h1>codex</h1><p>启动动画预览结束</p><button id="replay">重新播放</button><p>文字与颜色修改位置：config/splash.json</p></main>
+<script src="codex-splash.js"></script>
+<script>
+const config = /* SPLASH_CONFIG */{};
+const bridge = text => window.webkit?.messageHandlers?.splash?.postMessage(text);
+window.addEventListener('error', event => bridge('ERROR: ' + event.message));
+function play() {
+  window.previewPlayer = CodexSplash.start({...config,onDone:()=>bridge('COMPLETE')});
+  bridge('STARTED');
+}
+document.querySelector('#replay').addEventListener('click',play);
+play();
+</script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+{
+  "name": "开发者",
+  "nameEn": "DEVELOPER",
+  "user": "dev",
+  "sound": true,
+  "hold": 1400,
+  "brand": "CODEX",
+  "subtitle": "AGENTIC CODING RUNTIME",
+  "welcomePrefix": "欢迎回家，",
+  "welcomeEnPrefix": "WELCOME HOME, ",
+  "modeText": "专业工作模式",
+  "modeEn": "PRO MODE ENGAGED",
+  "operatorLabel": "操作员 OPERATOR",
+  "operatorBadge": "ROOT · L5",
+  "welcomeBadge": "ACCESS LEVEL 5 · ROOT · SESSION ",
+  "promptHost": "codex",
+  "promptPath": "~/project",
+  "promptMode": "[pro]",
+  "stats": [
+    [
+      "推理强度",
+      "最高"
+    ],
+    [
+      "审批策略",
+      "完全自主"
+    ],
+    [
+      "并行智能体",
+      "8"
+    ],
+    [
+      "沙箱网络",
+      "已放行"
+    ]
+  ],
+  "checks": [
+    [
+      "设备指纹",
+      "DEVICE ID"
+    ],
+    [
+      "硬件密钥",
+      "HW KEY"
+    ],
+    [
+      "生物特征",
+      "BIOMETRIC"
+    ],
+    [
+      "声纹比对",
+      "VOICEPRINT"
+    ],
+    [
+      "行为签名",
+      "BEHAVIOR"
+    ]
+  ],
+  "permissions": [
+    [
+      "文件系统",
+      "FS · READ/WRITE"
+    ],
+    [
+      "终端执行",
+      "EXEC · ANY"
+    ],
+    [
+      "网络访问",
+      "NET · OPEN"
+    ],
+    [
+      "代码仓库",
+      "GIT · PUSH"
+    ],
+    [
+      "智能体集群",
+      "AGENTS × 8"
+    ]
+  ],
+  "authTitles": {
+    "request": [
+      "申请访问许可",
+      "ACCESS REQUEST · CH-07"
+    ],
+    "verify": [
+      "身份验证",
+      "IDENTITY VERIFICATION"
+    ],
+    "success": [
+      "验证成功",
+      "VERIFIED · OPERATOR LEVEL 5"
+    ],
+    "grant": [
+      "权限已开放",
+      "ACCESS GRANTED · 5 SCOPES"
+    ]
+  },
+  "theme": {
+    "accent": "#3fd8ff",
+    "background": "#04070b",
+    "foreground": "#e6f8ff",
+    "success": "#5cf2b0",
+    "warning": "#ffb547"
+  },
+  "logMessages": [
+    "codex desktop · boot sequence",
+    "profile applied · network: deny",
+    "mount ~/project → /workspace (rw)",
+    "walking repository tree · {n} files",
+    "41 grammars loaded · 2.38M symbols",
+    "embedding shard 3/16 stale · rebuilt",
+    "call edges resolved · 9.42M",
+    "reasoning engine attached · ctx 1M",
+    "worker pool ×8 warm",
+    "shell · git · apply_patch · test",
+    "ed25519 build signature valid",
+    "3 servers handshaked · 0 errors",
+    "14 threads restored",
+    "ts · rust · python · go online",
+    "approval mode: on-request",
+    "runtime ready in {r}s",
+    "access request → secure enclave",
+    "challenge signed · nonce 9c41e7a0",
+    "identity scan · 5 factors",
+    "operator verified · {name} · root/L5",
+    "scopes granted · fs exec net git agents",
+    "approval mode → full-auto",
+    "professional workspace engaged"
+  ]
+}
